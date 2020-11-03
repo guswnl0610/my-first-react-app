@@ -1,0 +1,87 @@
+.Main .overall-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.left-main {
+  width: 614px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* story */
+
+.story-container {
+  width: 100%;
+  height: 110px;
+  margin: 25px 0 20px 0;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 16px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.story {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 80px;
+}
+
+.story .profile-img-container {
+  width: 66px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://user-images.githubusercontent.com/26221261/97956314-aa807f00-1deb-11eb-8f8d-d51ea69128bf.png');
+  background-size: contain;
+}
+
+.story .profile-img-container img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.story .story-id {
+  margin: 5px 0 0 0;
+  font-size: 12px;
+}
+
+.feed-container {
+  width: 100%;
+  overflow: hidden;
+  /* background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px; */
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 980px) {
+  .right-main {
+    display: none;
+  }
+  .left-main {
+    position: unset;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .left-main {
+    width: 100%;
+  }
+}
